@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProcessExtensions.cs" />
     <Compile Include="Service1.cs">
       <SubType>Component</SubType>
     </Compile>
