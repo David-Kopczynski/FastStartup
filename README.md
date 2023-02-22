@@ -1,18 +1,3 @@
-# ExeToService
+# Fast Startup
 
-automatically start executable files upon startup without any delay.
-
-## Preparation
-
-1.  Start CMD with administrator privileges
-2.  Execute `sc.exe create FastAutostart binPath= "PATH TO YOUR EXE\ExeAsService.exe" start = auto`
-
-## How To Use
-
-Executables that should be started should be put in the `Startup Fast`-Folder. You can find it by pressing `STRG + R` and launching `%USERPROFILE%\Microsoft\Windows\Start Menu\Programs\Startup Fast`.
-
-## How To Remove
-
-1.  Start CMD with administrator privileges
-2.  Execute `SC STOP FastAutostart`
-3.  Execute `SC DELETE FastAutostart`
+lets you automatically start executable files upon startup without any delay. All you need to do, is installing the Windows Service with the `Fast Startup Installer.msi`. Afterwards, any executable can be put in the `Startup Fast`-Folder, that starts applications immediately after bootup. You can find the folder by pressing `WIN + R` and launching `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup Fast` or after the folder opens automatically after the installation.

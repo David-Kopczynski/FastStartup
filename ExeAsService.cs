@@ -69,8 +69,6 @@ namespace ExeAsService
          */
         public void OnUserLogin()
         {
-            //string directory = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
-            //ProcessExtensions.StartProcessAsCurrentUser("C:\\Program Files (x86)\\David Kopczynski\\Fast Startup\\Autolaunch.exe");
             ProcessExtensions.StartProcessAsCurrentUser($@"{AppDomain.CurrentDomain.BaseDirectory}\Autolaunch.exe");
         }
     }
