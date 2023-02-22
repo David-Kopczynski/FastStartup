@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeAsService", "ExeAsService.csproj", "{1F47A2AA-70E4-4F82-AAEB-DFAAA1FBD868}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Fast Startup Installer", "..\Fast Startup Installer\Fast Startup Installer.vdproj", "{D5859438-A3CD-4B6E-80A4-74C6A41805DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autolaunch", "Autolaunch\Autolaunch.csproj", "{2949814C-5127-4E50-B4A2-F7385787B428}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Fast Startup Installer", "Fast Startup Installer\Fast Startup Installer.vdproj", "{2D022B4D-7FF9-4F93-83CF-2E2CC9C3135B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +19,12 @@ Global
 		{1F47A2AA-70E4-4F82-AAEB-DFAAA1FBD868}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F47A2AA-70E4-4F82-AAEB-DFAAA1FBD868}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F47A2AA-70E4-4F82-AAEB-DFAAA1FBD868}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5859438-A3CD-4B6E-80A4-74C6A41805DE}.Debug|Any CPU.ActiveCfg = Debug
-		{D5859438-A3CD-4B6E-80A4-74C6A41805DE}.Release|Any CPU.ActiveCfg = Release
+		{2949814C-5127-4E50-B4A2-F7385787B428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2949814C-5127-4E50-B4A2-F7385787B428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2949814C-5127-4E50-B4A2-F7385787B428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2949814C-5127-4E50-B4A2-F7385787B428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D022B4D-7FF9-4F93-83CF-2E2CC9C3135B}.Debug|Any CPU.ActiveCfg = Debug
+		{2D022B4D-7FF9-4F93-83CF-2E2CC9C3135B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

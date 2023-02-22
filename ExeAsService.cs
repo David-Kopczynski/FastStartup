@@ -22,6 +22,31 @@ namespace ExeAsService
             InitializeComponent();
         }
 
+        /**
+         * Start basic autolaunch functionalities
+         */
+        protected override void OnStart(string[] args)
+        {
+            if (args.Length != 0)
+            {
+                // Check start mode
+                switch (args[0])
+                {
+                    case "install":
+                        OnUserLogin();
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            base.OnStart(args);
+        }
+
+        /**
+         * Handle session changes
+         */
         protected override void OnSessionChange(SessionChangeDescription changeDescription)
         {
             switch (changeDescription.Reason)
@@ -39,10 +64,14 @@ namespace ExeAsService
             base.OnSessionChange(changeDescription);
         }
 
-        protected void OnUserLogin()
+        /**
+         * Start Autostart handler when user login is detected
+         */
+        public void OnUserLogin()
         {
             //string directory = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
-            ProcessExtensions.StartProcessAsCurrentUser("C:\\Program Files (x86)\\David Kopczynski\\Fast Startup\\Autostart.bat");
+            //ProcessExtensions.StartProcessAsCurrentUser("C:\\Program Files (x86)\\David Kopczynski\\Fast Startup\\Autolaunch.exe");
+            ProcessExtensions.StartProcessAsCurrentUser($@"{AppDomain.CurrentDomain.BaseDirectory}\Autolaunch.exe");
         }
     }
 }

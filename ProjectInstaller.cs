@@ -20,7 +20,8 @@ namespace ExeAsService
         {
             using (System.ServiceProcess.ServiceController sc = new System.ServiceProcess.ServiceController(serviceInstaller1.ServiceName))
             {
-                sc.Start();
+                string[] installArgs = { "install" };
+                sc.Start(installArgs);
             }
         }
 
